@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f4fc;
+  color: #20264b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #202b59;
+  color: #f3f4fc;
+}
+
+.hero h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.navButtons ul {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navButtons a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navButtons a:hover {
+  text-decoration: underline;
+}
+
+.wholePage {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.storeImg {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.grids {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.grids img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grids {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+}
